@@ -130,7 +130,8 @@ export const Chatbot: React.FC = () => {
         content: m.content,
       }));
 
-      const response = await fetch('/api/chat', {
+      const apiBase = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+      const response = await fetch(`${apiBase}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

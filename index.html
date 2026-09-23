@@ -3,31 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ansh Jain | Java Backend &amp; Spring Boot Developer</title>
-    <meta name="description" content="Portfolio of Ansh Jain, a BCA Computer Science student and Java Backend, Spring Boot, and Full-Stack Developer from Indore." />
-    <meta name="keywords" content="Ansh Jain, Java Developer, Spring Boot, Full-Stack Developer, BCA IPS Academy, Backend Developer, PostgreSQL, REST APIs, React" />
-    <meta name="author" content="Ansh Jain" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script>
+      // HMR is disabled in AI Studio container environment; silence benign WebSocket notices
+      window.addEventListener('unhandledrejection', function (e) {
+        var reason = e && e.reason ? (e.reason.message || String(e.reason)) : '';
+        if (/websocket/i.test(reason) || /failed to connect to websocket/i.test(reason)) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        var msg = e && e.message ? String(e.message) : '';
+        if (/websocket/i.test(msg)) {
+          e.preventDefault();
+        }
+      });
+    </script>
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://developeransh.netlify.app" />
-    <meta property="og:title" content="Ansh Jain | Java Backend &amp; Spring Boot Developer" />
-    <meta property="og:description" content="Portfolio of Ansh Jain, a BCA Computer Science student and Java Backend, Spring Boot, and Full-Stack Developer from Indore." />
-
-    <!-- Twitter -->
+    <!-- Primary Page Title & Metadata -->
+    <title>Ansh Jain | Java Backend &amp; Spring Boot Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ansh Jain, a Java Backend &amp; Full-Stack Developer specializing in Spring Boot microservices, PostgreSQL, secure REST APIs, and modern React apps."
+    />
+    <meta
+      name="keywords"
+      content="Ansh Jain, Java Developer, Spring Boot, Full-Stack Developer, Backend Developer, PostgreSQL, REST APIs, React, Spring Security, JWT, Indore, BCA IPS Academy"
+    />
+    <meta name="author" content="Ansh Jain" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://developeransh.netlify.app/" />
+    
+    <!-- Theme & Display Configurations -->
+    <meta name="theme-color" content="#10b981" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="application-name" content="Ansh Jain Portfolio" />
+    
+    <!-- OpenGraph / Facebook / LinkedIn Social Cards -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://developeransh.netlify.app/" />
+    <meta property="og:title" content="Ansh Jain | Java Backend &amp; Spring Boot Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Ansh Jain, a Java Backend &amp; Full-Stack Developer specializing in Spring Boot microservices, PostgreSQL, secure REST APIs, and modern React apps."
+    />
+    <meta property="og:site_name" content="Ansh Jain Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://developeransh.netlify.app/og-image.svg" />
+    <meta property="og:image:secure_url" content="https://developeransh.netlify.app/og-image.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ansh Jain - Java Backend &amp; Spring Boot Full-Stack Developer Portfolio" />
+    <meta property="profile:first_name" content="Ansh" />
+    <meta property="profile:last_name" content="Jain" />
+    <meta property="profile:username" content="anshjain1440" />
+    
+    <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ansh Jain | Java Backend &amp; Spring Boot Developer" />
-    <meta name="twitter:description" content="Portfolio of Ansh Jain, a BCA Computer Science student and Java Backend, Spring Boot, and Full-Stack Developer from Indore." />
-
+    <meta name="twitter:url" content="https://developeransh.netlify.app/" />
+    <meta name="twitter:title" content="Ansh Jain | Java Backend &amp; Spring Boot Full-Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Ansh Jain, a Java Backend &amp; Full-Stack Developer specializing in Spring Boot microservices, PostgreSQL, secure REST APIs, and modern React apps."
+    />
+    <meta name="twitter:image" content="https://developeransh.netlify.app/og-image.svg" />
+    <meta name="twitter:image:alt" content="Ansh Jain - Java Backend &amp; Spring Boot Full-Stack Developer Portfolio" />
+    
     <!-- Favicon & Web fonts -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='65' font-size='48' font-weight='bold' fill='%2310b981' font-family='monospace' text-anchor='middle'>AJ</text></svg>" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://developeransh.netlify.app/#person",
+          "name": "Ansh Jain",
+          "jobTitle": "Java Backend & Full-Stack Developer",
+          "image": "https://developeransh.netlify.app/og-image.svg",
+          "description": "BCA student, Java Backend and Spring Boot Developer specialized in high-performance REST APIs, relational databases, and enterprise web systems.",
+          "url": "https://developeransh.netlify.app/",
+          "email": "mailto:anshjain1440@gmail.com",
+          "telephone": "+919340916053",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Indore",
+            "addressRegion": "Madhya Pradesh",
+            "addressCountry": "India"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "IPS Academy, Indore"
+          },
+          "sameAs": [
+            "https://github.com/anshjain1440",
+            "https://www.linkedin.com/in/ansh-jain-567838321"
+          ],
+          "knowsAbout": [
+            "Java 17",
+            "Spring Boot 3",
+            "Spring Security",
+            "PostgreSQL",
+            "Hibernate ORM",
+            "React",
+            "Tailwind CSS",
+            "RESTful API Design",
+            "Stateless JWT Authentication",
+            "Docker",
+            "Database Normalization"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://developeransh.netlify.app/#website",
+          "url": "https://developeransh.netlify.app/",
+          "name": "Ansh Jain Developer Portfolio",
+          "description": "Official developer portfolio and software engineering showcase for Ansh Jain.",
+          "publisher": {
+            "@id": "https://developeransh.netlify.app/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://developeransh.netlify.app/#profilepage",
+          "url": "https://developeransh.netlify.app/",
+          "name": "Ansh Jain | Java Backend & Spring Boot Full-Stack Developer",
+          "primaryImageOfPage": "https://developeransh.netlify.app/og-image.svg",
+          "image": "https://developeransh.netlify.app/og-image.svg",
+          "isPartOf": {
+            "@id": "https://developeransh.netlify.app/#website"
+          },
+          "mainEntity": {
+            "@id": "https://developeransh.netlify.app/#person"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "Featured Software Engineering Projects",
+          "itemListElement": [
+            {
+              "@type": "SoftwareSourceCode",
+              "position": 1,
+              "name": "Smart Healthcare Management System",
+              "programmingLanguage": ["Java", "TypeScript", "SQL"],
+              "runtimePlatform": "Spring Boot 3.2, React 18, PostgreSQL",
+              "description": "Comprehensive appointment booking and patient records system with Spring Security JWT and Role-Based Access Control (Admin, Doctor, Patient)."
+            },
+            {
+              "@type": "SoftwareSourceCode",
+              "position": 2,
+              "name": "College Student Information Portal",
+              "programmingLanguage": ["Java", "SQL"],
+              "runtimePlatform": "Java MVC, Spring Boot, PostgreSQL",
+              "description": "Academic management portal handling course registrations, semester grading records, and faculty scheduling."
+            },
+            {
+              "@type": "SoftwareSourceCode",
+              "position": 3,
+              "name": "Personal Financial Tracker & Budget Planner",
+              "programmingLanguage": ["TypeScript", "Java"],
+              "runtimePlatform": "React, Tailwind CSS, Spring Boot REST",
+              "description": "Personal finance management dashboard with categorized budget forecasting and real-time expense analytics."
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 selection:bg-emerald-500/20 selection:text-emerald-700 dark:selection:text-emerald-300 font-sans antialiased overflow-x-hidden transition-colors duration-200">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#334155" stroke-opacity="0.25" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="150" y1="0" x2="150" y2="630" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="450" y1="0" x2="450" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="750" y1="0" x2="750" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+    <line x1="1050" y1="0" x2="1050" y2="630" />
+  </g>
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="980" cy="180" r="220" fill="#10b981" fill-opacity="0.16" filter="url(#glow)" />
+  <circle cx="150" cy="500" r="260" fill="#047857" fill-opacity="0.12" filter="url(#glow)" />
+
+  <!-- Outer Border Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="20" fill="none" stroke="#10b981" stroke-opacity="0.3" stroke-width="2" />
+
+  <!-- Developer Identity Badge -->
+  <g transform="translate(80, 80)">
+    <rect width="210" height="42" rx="8" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1.5" />
+    <circle cx="22" cy="21" r="5" fill="#10b981" />
+    <text x="38" y="26" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#34d399" letter-spacing="1">AVAILABLE FOR HIRE</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="80" y="210" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="#ffffff" letter-spacing="-1">
+    Ansh Jain
+  </text>
+  <text x="80" y="275" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="34" font-weight="700" fill="url(#brandGrad)">
+    Java Backend &amp; Spring Boot Developer
+  </text>
+
+  <!-- Description Subtitle -->
+  <text x="80" y="335" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#94a3b8">
+    Building high-concurrency microservices, robust REST APIs &amp; scalable full-stack web applications.
+  </text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(80, 385)">
+    <!-- Pill 1: Java 17 -->
+    <rect x="0" y="0" width="125" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="62" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#f8fafc">Java 17</text>
+
+    <!-- Pill 2: Spring Boot 3 -->
+    <rect x="140" y="0" width="165" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="222" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#f8fafc">Spring Boot 3</text>
+
+    <!-- Pill 3: PostgreSQL -->
+    <rect x="320" y="0" width="150" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="395" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#f8fafc">PostgreSQL</text>
+
+    <!-- Pill 4: Spring Security & JWT -->
+    <rect x="485" y="0" width="195" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="582" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#f8fafc">Security &amp; JWT</text>
+
+    <!-- Pill 5: React & TS -->
+    <rect x="695" y="0" width="170" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <text x="780" y="28" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600" fill="#f8fafc">React &amp; TS</text>
+  </g>
+
+  <!-- Right Side Decorative Code Terminal Card -->
+  <g transform="translate(860, 100)">
+    <rect width="260" height="280" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    <circle cx="28" cy="26" r="6" fill="#ef4444" />
+    <circle cx="48" cy="26" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="26" r="6" fill="#10b981" />
+    <line x1="0" y1="52" x2="260" y2="52" stroke="#334155" stroke-width="1" />
+    
+    <text x="24" y="86" font-family="'JetBrains Mono', monospace" font-size="13" fill="#64748b">// Stack &amp; Target</text>
+    <text x="24" y="116" font-family="'JetBrains Mono', monospace" font-size="14" fill="#a855f7">@RestController</text>
+    <text x="24" y="144" font-family="'JetBrains Mono', monospace" font-size="13" fill="#38bdf8">public class</text>
+    <text x="135" y="144" font-family="'JetBrains Mono', monospace" font-size="13" fill="#ffffff">App {</text>
+    <text x="36" y="174" font-family="'JetBrains Mono', monospace" font-size="13" fill="#34d399">@Autowired</text>
+    <text x="36" y="202" font-family="'JetBrains Mono', monospace" font-size="13" fill="#e2e8f0">Service svc;</text>
+    <text x="36" y="232" font-family="'JetBrains Mono', monospace" font-size="13" fill="#64748b">// 99.9% Uptime</text>
+    <text x="24" y="260" font-family="'JetBrains Mono', monospace" font-size="14" fill="#ffffff">}</text>
+  </g>
+
+  <!-- Footer Link & Verification -->
+  <line x1="80" y1="485" x2="1120" y2="485" stroke="#334155" stroke-opacity="0.6" stroke-width="1" />
+  <g transform="translate(80, 528)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="17" font-weight="600" fill="#34d399">
+      developeransh.netlify.app
+    </text>
+    <text x="1040" y="0" text-anchor="end" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="15" fill="#94a3b8">
+      BCA Computer Science • IPS Academy Indore
+    </text>
+  </g>
+</svg>
